@@ -1,3 +1,6 @@
+
+// const client = new ApolloClient();
+
 var MainView = React.createClass({
 
   getInitialState: function() {
@@ -18,7 +21,9 @@ var MainView = React.createClass({
 
   componentWillMount: function() {
 
-    this.pusher = new Pusher(PUSHER_CHAT_APP_KEY);
+    this.pusher = new Pusher('d02baf1ebb9018ac54ef', {
+      cluster: 'ap2'
+    });
     this.chatRoom = this.pusher.subscribe('messages');
 
   },

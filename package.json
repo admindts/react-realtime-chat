@@ -1,17 +1,36 @@
 {
-  "name": "pusher-platform-auth-example-express",
+  "name": "client",
   "version": "0.1.0",
-  "description": "Pusher Platform auth endpoint example - using Express",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.16.0",
-    "express": "^4.14.0",
+    "apollo-client": "^1.7.0",
+    "apollo-server-express": "^1.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-node6": "^11.0.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "faker": "^4.1.0",
+    "graphql": "^0.11.7",
+    "graphql-server-core": "^1.2.0",
+    "graphql-server-express": "^1.2.0",
+    "graphql-server-module-graphiql": "^1.2.0",
+    "graphql-subscriptions": "^0.5.4",
+    "graphql-tools": "^2.6.1",
+    "jquery": "^3.2.1",
     "node-env-file": "^0.1.8",
-    "pusher": "^1.5.1"
+    "pusher": "^1.5.1",
+    "pusher-js": "^4.2.1",
+    "react": "^16.0.0",
+    "react-apollo": "^1.4.2",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14",
+    "strftime": "^0.10.0",
+    "subscriptions-transport-ws": "^0.7.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

@@ -6,6 +6,28 @@ The UI components can be found in `static/javascripts/ui_components`.
 
 The back-end uses Node.js and can be found in `server.js`.
 
+## Update
+
+We've added Apollo server in backend (nodejs) and added apollo client in front (react). 
+
+Instruction to run the application
+
+* Create .env file with pusher app details as described
+* 
+```bash
+$ npm install
+```
+* Start the server, using
+
+```bash
+$ ./node_modules/.bin/babel-node --presets node6 ./server.js
+```
+* start the client by
+```bash
+$ npm start
+```
+* visit the site at http://localhost:3000/
+
 ## Project Test Criteria
 
 For this test project, you will modify this sample project to be written in Apollo instead of plain React. The chat websockets will be powered by Pusher.com.
